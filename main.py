@@ -14,7 +14,7 @@ class MyServer(BaseHTTPRequestHandler):
 
     def get_html_content(self):
         return """
-        <!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -340,7 +340,7 @@ class MyServer(BaseHTTPRequestHandler):
                               <div class="col">
                                 <div class="collapse multi-collapse" id="multiCollapseExample1">
                                   <div class="card card-body">
-                                    Быстро и не дорого
+                                    Быстрая покупка в один шаг, не требует регистрации
                                   </div>
                                 </div>
                               </div>
@@ -348,7 +348,7 @@ class MyServer(BaseHTTPRequestHandler):
                               <div class="col">
                                 <div class="collapse multi-collapse" id="multiCollapseExample2">
                                   <div class="card card-body">
-                                    Быстро и аккуратно
+                                    Надёжный сервис курьерской доставки
                                   </div>
                                 </div>
                               </div>
@@ -356,20 +356,65 @@ class MyServer(BaseHTTPRequestHandler):
                               <div class="col">
                                 <div class="collapse multi-collapse" id="multiCollapseExample3">
                                   <div class="card card-body">
-                                    Вечно
+                                    Продавец или производитель берёт на себя ответственность за качество потребительских свойств и функционирование товара
                                   </div>
                                 </div>
                               </div>
 
-
-
                             </div>
 
-
-
-
-
             </div>
+
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">номер</th>
+      <th scope="col">название товара</th>
+      <th scope="col">цена за штуку,</th>
+      <th scope="col">количество</th>
+      <th scope="col">итоговая сумма</th>
+      <th scope="col">статус заказа</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Карандаш</td>
+      <td>10</td>
+      <td>10</td>
+      <td>100</td>
+      <td class="table-primary">новый</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Ручка</td>
+      <td>20</td>
+      <td>10</td>
+      <td>200</td>
+      <td class="table-warning">обработка</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td >Фломастер</td>
+      <td>30</td>
+      <td>10</td>
+      <td>300</td>
+      <td class="table-success">обработан</td>
+    </tr>
+  <tr>
+      <th scope="row">4</th>
+      <td>Выделитель</td>
+      <td>40</td>
+      <td>10</td>
+      <td>400</td>
+      <td class="table-danger">отмена</td>
+    </tr>
+
+  </tbody>
+</table>
+
+
         </main>
 
     </div>
