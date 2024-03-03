@@ -268,7 +268,6 @@
 
         <main class="row">
             <div class="row text-center">
-
                 <div class="col-4">
                     <div class="card mb-4 rounded-3 shadow-sm">
                         <div class="card-header py-3">
@@ -295,7 +294,7 @@
 
                                 <div class="mb-3">
                                     <label for="exampleInputPassword1" class="form-label">Имя</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                    <input type="text" class="form-control" id="exampleInputPassword1">
                                   </div>
 
                                 <div class="mb-3">
@@ -313,91 +312,96 @@
 
                 <h3 class="card_header">F A Q</h3>
 
-                 <p class="d-inline-flex gap-1">
-                              <button  class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample1"  aria-expanded="false"  aria-controls="multiCollapseExample2">Как купить?</button>
-                              <button  class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2"  aria-expanded="false"  aria-controls="multiCollapseExample3">Как доставить?</button>
-                              <button  class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3"  aria-expanded="false"  aria-controls="multiCollapseExample3">Какая гарантия?</button>
-                            </p>
-                            <div class="row">
+                              <div class="card-body">
+                                        <p class="d-inline-flex gap-1">
+                                        </p>
+                                        <div class="row">
+                                          <div class="col">
+                                            <button  class="btn btn-primary w-100 mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample1"  aria-expanded="false"  aria-controls="multiCollapseExample2">Как купить?</button>
+                                            <div class="collapse multi-collapse" id="multiCollapseExample1">
+                                              <div class="card card-body">
+                                                Быстрая покупка в один шаг, не требует регистрации
+                                              </div>
+                                            </div>
+                                          </div>
 
+                                          <div class="col bg-5">
+                                             <button  class="btn btn-primary w-100 mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2"  aria-expanded="false"  aria-controls="multiCollapseExample3">Как доставить?</button>
+                                             <div class="collapse multi-collapse" id="multiCollapseExample2">
+                                              <div class="card card-body">
+                                                Надёжный сервис курьерской доставки
+                                              </div>
+                                            </div>
+                                          </div>
 
-                              <div class="col">
-                                <div class="collapse multi-collapse" id="multiCollapseExample1">
-                                  <div class="card card-body">
-                                    Быстрая покупка в один шаг, не требует регистрации
-                                  </div>
-                                </div>
+                                          <div class="col">
+                                             <button  class="btn btn-primary w-100 mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3"  aria-expanded="false"  aria-controls="multiCollapseExample3">Какая гарантия?</button>
+                                             <div class="collapse multi-collapse" id="multiCollapseExample3">
+                                              <div class="card card-body">
+                                                Продавец или производитель берёт на себя ответственность за качество потребительских свойств и функционирование товара
+                                              </div>
+                                            </div>
+                                          </div>
+
+                                        </div>
                               </div>
 
-                              <div class="col">
-                                <div class="collapse multi-collapse" id="multiCollapseExample2">
-                                  <div class="card card-body">
-                                    Надёжный сервис курьерской доставки
-                                  </div>
-                                </div>
-                              </div>
 
-                              <div class="col">
-                                <div class="collapse multi-collapse" id="multiCollapseExample3">
-                                  <div class="card card-body">
-                                    Продавец или производитель берёт на себя ответственность за качество потребительских свойств и функционирование товара
-                                  </div>
-                                </div>
-                              </div>
-
-                            </div>
 
             </div>
+                <h3 class="card_header text-center"></h3>
+                <h3 class="card_header text-center">Таблица статусов заказов</h3>
 
+                <div class="card mt-3">
+                      <div class="card-body">
 
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">номер</th>
-      <th scope="col">название товара</th>
-      <th scope="col">цена за штуку,</th>
-      <th scope="col">количество</th>
-      <th scope="col">итоговая сумма</th>
-      <th scope="col">статус заказа</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Карандаш</td>
-      <td>10</td>
-      <td>10</td>
-      <td>100</td>
-      <td class="table-primary">новый</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Ручка</td>
-      <td>20</td>
-      <td>10</td>
-      <td>200</td>
-      <td class="table-warning">обработка</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td >Фломастер</td>
-      <td>30</td>
-      <td>10</td>
-      <td>300</td>
-      <td class="table-success">обработан</td>
-    </tr>
-  <tr>
-      <th scope="row">4</th>
-      <td>Выделитель</td>
-      <td>40</td>
-      <td>10</td>
-      <td>400</td>
-      <td class="table-danger">отмена</td>
-    </tr>
-
-  </tbody>
-</table>
-
+                           <table class="table">
+                                      <thead>
+                                        <tr>
+                                          <th scope="col">номер</th>
+                                          <th scope="col">название товара</th>
+                                          <th scope="col">цена за штуку,</th>
+                                          <th scope="col">количество</th>
+                                          <th scope="col">итоговая сумма</th>
+                                          <th scope="col">статус заказа</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <th scope="row">1</th>
+                                          <td>Карандаш</td>
+                                          <td>10</td>
+                                          <td>10</td>
+                                          <td>100</td>
+                                          <td class="table-primary">новый</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">2</th>
+                                          <td>Ручка</td>
+                                          <td>20</td>
+                                          <td>10</td>
+                                          <td>200</td>
+                                          <td class="table-warning">обработка</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">3</th>
+                                          <td >Фломастер</td>
+                                          <td>30</td>
+                                          <td>10</td>
+                                          <td>300</td>
+                                          <td class="table-success">обработан</td>
+                                        </tr>
+                                      <tr>
+                                          <th scope="row">4</th>
+                                          <td>Выделитель</td>
+                                          <td>40</td>
+                                          <td>10</td>
+                                          <td>400</td>
+                                          <td class="table-danger">отмена</td>
+                                      </tr>
+                           </table>
+                      </div>
+                </div>
 
         </main>
 
